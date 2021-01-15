@@ -1,0 +1,8 @@
+.container{
+  margin: 20px 150px 0;
+  background-color: green;
+  min-height: 100px;
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px;
+}
