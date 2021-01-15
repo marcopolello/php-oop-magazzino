@@ -28,10 +28,10 @@
             $this->name = $name;
             $this->location = $location;
           }
-          function set_warehouse() {
-            echo "<h1>Nome Magazzino: {$this->name} <br>
-            situato in {$this->location} <br>
-            e contiene i seguenti prodotti: {$this->products}</h1>";
+          function get_warehouse() {
+            echo "The warehouse name is: {$this->name}, <br>
+            located in: {$this->location} <br>
+            and these are the products inside: <br>";
           }
         }
 
@@ -53,7 +53,6 @@
         }
 
         $warehouse = new WareHouse("Magazzino#1", "Saonara(Ve)");
-        $warehouse -> set_warehouse();
         $product1 = new Product();
         $product1 -> set_prod("frigo", "45kg", "350€");
         $product2 = new Product();
@@ -69,6 +68,9 @@
         // var_dump($product1);
 
         ?>
+          <h1 class="">
+            <?php echo $warehouse->get_warehouse()?>
+          </h1>
           <h4 class="">
             <?php echo $product1->get_prod()?>
           </h4>
